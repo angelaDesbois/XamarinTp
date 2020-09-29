@@ -4,32 +4,46 @@
              x:Class="XamarinTp.MainPage">
 
     <StackLayout>
-        <StackLayout Orientation="Vertical">
-            <ContentView BackgroundColor="#58B0F0">
-                <StackLayout Orientation="Horizontal" Margin="10, 25">
-                    <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
-                    <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
-                    <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
-                </StackLayout>
-            </ContentView>
+        <StackLayout BackgroundColor="#58B0F0" Orientation="Horizontal" Padding="10, 25">
+           
+               
+                    <Label Text="Nouveau" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"></Label>
+                    <Label Text="Accueil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                    <Label Text="Rechercher" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"></Label>
+         </StackLayout>
+            
 
           
-            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
-                        <ContentView Margin="10" WidthRequest="75" HeightRequest="75" BackgroundColor="Black"></ContentView>
+                        <BoxView BackgroundColor="AliceBlue" WidthRequest="75"/>
+                        <StackLayout Orientation="Vertical">
+                             <StackLayout Orientation="Horizontal">
+                                <Label Text="nom"/>
+                                <Label Text="identifient"/>
+                                <Label Text="date" TextColor="Gray" HorizontalOptions="EndAndExpand"/>
+                              </StackLayout>
+                              <Label Text="jfdjgbdjgbfdhgbdfgvdhgbvdhvfdgfhyjghbffhfhfhfhhfhf"/>
+                      </StackLayout>
                     </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label HorizontalOptions="CenterAndExpand" Text="répondre"/>
+                    <Label HorizontalOptions="CenterAndExpand" Text="Retweet"/>
+                    <Label HorizontalOptions="CenterAndExpand" Text="Favoris"/>
                 </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
             </ScrollView>
-            <ContentView BackgroundColor="#58B0F0">
-                <StackLayout Orientation="Horizontal" Margin="10, 25">
+            <StackLayout HeightRequest="75" Orientation="Horizontal" VerticalOptions="End">
+               
                     <Label Text="Fil" VerticalTextAlignment="Center"></Label>
                     <Label Text="Notification" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
                     <Label Text="Messages" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
                     <Label Text="Moi" VerticalTextAlignment="Center"></Label>
-                </StackLayout>
-            </ContentView>
+               
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+   
 
 </ContentPage>
