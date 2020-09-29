@@ -15,7 +15,11 @@
 
           
             <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                        <ContentView Margin="10" WidthRequest="75" HeightRequest="75" BackgroundColor="Black"></ContentView>
+                    </StackLayout>
+                </StackLayout>
             </ScrollView>
             <ContentView BackgroundColor="#58B0F0">
                 <StackLayout Orientation="Horizontal" Margin="10, 25">
