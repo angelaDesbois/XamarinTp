@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTp.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Vertical">
+            <ContentView BackgroundColor="#58B0F0">
+                <StackLayout Orientation="Horizontal" Margin="10, 25">
+                    <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
+                    <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="Center"></Label>
+                    <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+            </ContentView>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
