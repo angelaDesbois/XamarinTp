@@ -8,13 +8,23 @@
             <ContentView BackgroundColor="#58B0F0">
                 <StackLayout Orientation="Horizontal" Margin="10, 25">
                     <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
-                    <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="Center"></Label>
+                    <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
                     <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
                 </StackLayout>
             </ContentView>
+
+          
             <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 
             </ScrollView>
+            <ContentView BackgroundColor="#58B0F0">
+                <StackLayout Orientation="Horizontal" Margin="10, 25">
+                    <Label Text="Fil" VerticalTextAlignment="Center"></Label>
+                    <Label Text="Notification" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Text="Messages" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Text="Moi" VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+            </ContentView>
         </StackLayout>
     </StackLayout>
 
