@@ -30,6 +30,7 @@
 
                 <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="connexion_Clicked"></Button>
                 </StackLayout>
+                
                 <StackLayout x:Name="tweet" IsVisible="False" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10" BackgroundColor="Aqua">
                         <!-- <BoxView BackgroundColor="AliceBlue" WidthRequest="75"/>-->
                         <Image Margin="10" WidthRequest="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"></Image>

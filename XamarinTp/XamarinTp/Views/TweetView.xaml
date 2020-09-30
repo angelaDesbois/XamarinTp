@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTp.Views.TweetView">
+  <ContentView.Content>
+      <StackLayout>
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10" BackgroundColor="Aqua">
+                <!-- <BoxView BackgroundColor="AliceBlue" WidthRequest="75"/>-->
+                <Image Margin="10" WidthRequest="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"></Image>
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="pseudoUser" Text="nom"/>
+                        <Label x:Name="id" Text="identifient"/>
+                        <Label  x:Name="dateCreation" Text="date" TextColor="Gray" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                    <Label x:Name="texte" Text="jfdjgbdjgbfdhgbdfgvdhgbvdhvfdgfhyjghbffhfhfhfhhfhf"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

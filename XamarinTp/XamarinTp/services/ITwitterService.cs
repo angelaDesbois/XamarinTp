@@ -7,7 +7,7 @@ namespace XamarinTp.services
 {
     public interface ITwitterService
     {
-        bool authenticate(String key, String secret);
+        bool authenticate(String id, String password);
         List<Tweet> getTweets();
     }
 }
