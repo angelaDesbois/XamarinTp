@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using XamarinTp.models;
 using XamarinTp.services;
@@ -18,6 +19,13 @@ namespace XamarinTp
         public MainPage()
         {
             InitializeComponent();
+
+            var networkAccess = Connectivity.NetworkAccess;
+            if(networkAccess != NetworkAccess.Internet)
+            {
+                this.erreur.Text = "se connecter a internet";
+            }
+
             this.loadTweet(this.TweetList);
             
         }
