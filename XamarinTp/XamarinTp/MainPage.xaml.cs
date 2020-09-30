@@ -11,6 +11,7 @@ namespace XamarinTp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+       
         public MainPage()
         {
             InitializeComponent();
@@ -26,27 +27,38 @@ namespace XamarinTp
 
             this.erreur.IsVisible = false;
 
-            if(id == null || string.IsNullOrEmpty(id) || id.Length < 3)
+            var testLogin = true;
+            var testPassword = true;
+
+            if (id == null || string.IsNullOrEmpty(id) || id.Length < 3)
             {
                 this.erreur.Text = "Entrer un id d au moins 3 caractères";
                 this.erreur.IsVisible = true;
-                return;
+                testLogin = false;
+               
             }
 
             if (password == null || string.IsNullOrEmpty(password) || password.Length < 6)
             {
                 this.erreur.Text = "Entrer un password d au moins 6 caractères";
                 this.erreur.IsVisible = true;
-                return;
+                testPassword = false;
+               
             }
 
-            if (this.seSouvenir.IsToggled)
+            if(testPassword && testLogin)
             {
-                DisplayAlert("Info", "Vous serez connecté automatiquement au prochain lancement", "Compris");
+                this.form.IsVisible = false;
+                this.tweet.IsVisible = true;
+               
             }
 
-            this.form.IsVisible = false;
-            this.tweet.IsVisible = true;
+           // if (this.seSouvenir.IsToggled)
+            //{
+             //   DisplayAlert("Info", "Vous serez connecté automatiquement au prochain lancement", "Compris");
+           // }
+
+            
         }
     }
 }

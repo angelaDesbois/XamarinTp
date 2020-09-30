@@ -5,17 +5,18 @@
 
     <StackLayout>
         <StackLayout BackgroundColor="#58B0F0" Orientation="Horizontal" Padding="10, 25">
-           
-               
-                    <ImageButton Source="pencil.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-                    <Label Text="Accueil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" TextColor="White"></Label>
-                    <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
-         </StackLayout>
-            
 
-          
-            <ScrollView VerticalOptions="FillAndExpand">
-                <StackLayout x:Name="form" Orientation="Vertical" BackgroundColor="Aquamarine">
+
+            <ImageButton Source="pencil.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+            <Label Text="Accueil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" TextColor="White"></Label>
+            <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
+        </StackLayout>
+
+
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout  Orientation="Vertical" BackgroundColor="Aquamarine">
+                <StackLayout x:Name="form" Orientation="Vertical">
                 <Label Text="Connexion à twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
                 <Entry x:Name="id" Placeholder="Id twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
                 <Entry x:Name="password" Placeholder="password" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
@@ -24,41 +25,44 @@
                     <Switch x:Name="seSouvenir"></Switch>
                     <Label Text="mémoriser mes infos" VerticalOptions="CenterAndExpand"></Label>
                 </StackLayout>
-                    
+
                 <Label x:Name="erreur" IsVisible="False" TextColor="Red"></Label>
-                    
+
                 <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="connexion_Clicked"></Button>
-                    
-                    
+                </StackLayout>
                 <StackLayout x:Name="tweet" IsVisible="False" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10" BackgroundColor="Aqua">
-                       <!-- <BoxView BackgroundColor="AliceBlue" WidthRequest="75"/>-->
-                    <Image Margin="10" WidthRequest="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"></Image>
+                        <!-- <BoxView BackgroundColor="AliceBlue" WidthRequest="75"/>-->
+                        <Image Margin="10" WidthRequest="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"></Image>
                         <StackLayout Orientation="Vertical">
-                             <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
                                 <Label Text="nom"/>
                                 <Label Text="identifient"/>
                                 <Label Text="date" TextColor="Gray" HorizontalOptions="EndAndExpand"/>
-                              </StackLayout>
-                              <Label Text="jfdjgbdjgbfdhgbdfgvdhgbvdhvfdgfhyjghbffhfhfhfhhfhf"/>
-                      </StackLayout>
+                            </StackLayout>
+                            <Label Text="jfdjgbdjgbfdhgbdfgvdhgbvdhvfdgfhyjghbffhfhfhfhhfhf"/>
+                        </StackLayout>
                     </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
-                    <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
-                    <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
-                </StackLayout>
-                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand"/>
+                
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                        <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                        <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    </StackLayout>
+                    <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
-            </ScrollView>
-            <StackLayout HeightRequest="75" Orientation="Horizontal" VerticalOptions="End">
-               
-                    <Label Text="Fil" VerticalTextAlignment="Center"></Label>
-                    <Label Text="Notification" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
-                    <Label Text="Messages" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
-                    <Label Text="Moi" VerticalTextAlignment="Center"></Label>
-               
-            </StackLayout>
+
+        </ScrollView>
+        <StackLayout HeightRequest="75" Orientation="Horizontal" VerticalOptions="End">
+
+            <Label Text="Fil" VerticalTextAlignment="Center"></Label>
+            <Label Text="Notification" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
+            <Label Text="Messages" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
+            <Label Text="Moi" VerticalTextAlignment="Center"></Label>
+
         </StackLayout>
+    </StackLayout>
+   
+    
    
 
 </ContentPage>
