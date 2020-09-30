@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamarinTp.models;
 using XamarinTp.services;
+using XamarinTp.Views;
 
 namespace XamarinTp
 {
@@ -17,7 +18,18 @@ namespace XamarinTp
         public MainPage()
         {
             InitializeComponent();
+            this.loadTweet(this.TweetList);
             
+        }
+
+        private void loadTweet(StackLayout tweetList)
+        {
+            foreach(var tweet in twitterService.getTweets())
+            {
+                TweetView tweetView = new TweetView();
+                tweetView.LoadData(tweet);
+                tweetList.Children.Add(tweetView);
+            }
         }
 
         private void connexion_Clicked(object sender, EventArgs e)
@@ -33,7 +45,7 @@ namespace XamarinTp
             {
                 this.form.IsVisible = false;
                 
-                this.tweet.IsVisible = true;
+                this.TweetList.IsVisible = true;
             }
             else
             {
